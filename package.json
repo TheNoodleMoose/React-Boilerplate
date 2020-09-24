@@ -4,7 +4,8 @@
   "description": "Custom boilerplate for react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "start": "webpack-dev-server --mode=development --open --hot",
     "build": "webpack --mode=production"
   },
@@ -15,13 +16,18 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "@types/jest": "^26.0.14",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "awesome-typescript-loader": "^5.2.1",
     "css-loader": "^4.3.0",
     "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.4.2",
     "mini-css-extract-plugin": "^0.11.2",
     "source-map-loader": "^1.1.0",
+    "ts-jest": "^26.4.0",
     "typescript": "^4.0.3",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
